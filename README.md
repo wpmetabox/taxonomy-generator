@@ -1,4 +1,4 @@
-# Post Type Generator
+# Custom Taxonomy Generator
 
 ### Step 1: Install Dependencies
 ```javascript
