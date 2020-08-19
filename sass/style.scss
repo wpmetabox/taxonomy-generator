@@ -1,0 +1,147 @@
+:root {
+	--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+	--text-sm: 14px;
+	--text-md: 16px;
+	--text-lg: 18px;
+
+	--color-accent: #007cba;
+	--color-secondary: #ffffff;
+	--color-text: #444;
+	--color-border: #7e8993;
+}
+
+body {
+	background: #fff;
+}
+
+.ctg-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 15px 0;
+
+	.ctg-row {
+		margin: 0;
+	}
+}
+
+.ctg-col-6 {
+	flex: 0 0 60%;
+	padding: 15px;
+}
+
+.ctg-col-3 {
+	flex: 0 0 20%;
+	padding: 15px;
+}
+
+.ctg-align-start {
+	align-items: start;
+}
+
+/** Typo **/
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-size: var(--text-md);
+	line-height: 2;
+}
+
+/** Elements **/
+#ctg-root {
+	margin: 50px 0;
+
+	code {
+		background: rgb(40, 42, 54) none repeat scroll 0% 0%;
+		color: inherit;
+	}
+
+	label {
+		font-weight: bold;
+		cursor: pointer;
+	
+		label:not(.ctg-icon-single) {
+			font-weight: normal;
+			margin-right: 30px;
+		}
+	}
+
+	input,
+	textarea {
+		font-weight: normal;
+	}
+
+	[type=text] {
+		width: 270px;
+		padding: 0 8px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	[type=checkbox] {
+		margin-top: -1px;
+		margin-right: 8px;
+	}
+
+	[type=radio] {
+		margin-top: 4px;
+		margin-right: 8px;
+	}
+
+	textarea {
+		width: 600px;
+		min-height: 50px;
+		padding: 8px 18px;
+	}
+}
+
+.ctg-label {
+	width: 300px;
+}
+
+.ctg-description {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.ctg-button {
+	background-color: var(--color-accent);
+	color: var(--color-secondary);
+	border: 0;
+	padding: 8px 10px;
+	border-radius: 2px;
+	margin-bottom: 30px;
+	cursor: pointer;
+
+	&:hover {
+		opacity: .9;
+	}
+}
+
+.react-tabs {
+	&__tab-list {
+		display: flex;
+	}
+
+	&__tab-panel {
+		padding: 15px 15px 100px;
+	}
+
+	&__tab--selected {
+		h2 {
+			color: var(--color-text);
+		}
+	}
+}
+
+/** Common **/
+.ctg-required {
+	color: red;
+	font-weight: bold;
+	margin-left: 3px;
+}

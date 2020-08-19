@@ -1,0 +1,35 @@
+{
+	"name": "mb-cpt",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"css": "node-sass --output-style compressed -x sass/style.scss -o public",
+		"watch": "node-sass -w sass -o public",
+		"start": "react-scripts start",
+		"build": "react-scripts build"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^4.14.1",
+		"react": "^16.13.1",
+		"react-code-blocks": "^0.0.8",
+		"react-dom": "^16.13.1",
+		"react-scripts": "^3.4.3",
+		"react-select": "^3.1.0",
+		"react-tabs": "^3.1.1"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
