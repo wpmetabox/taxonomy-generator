@@ -26,7 +26,7 @@ const LabelSettings = {
 
 export const PostTypeSettings = {
 	'post'               : true,
-	'page'               : false,
+	'page'               : true,
 	'attachment'         : false,
 	'custom_css'         : false,
 	'customize_changeset': false,

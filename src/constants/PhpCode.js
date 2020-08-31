@@ -45,13 +45,12 @@ const reWrite = settings => {
 	let result = `'rewrite' => `;
 
 	const rewrite_slug = undefined === settings.rewrite_slug ? '' : `'slug' => '${settings.rewrite_slug}'`;
-	const rewrite_no_front = undefined === settings.rewrite_no_front || false === settings.rewrite_no_front ? '' : ` 'with_front' => false`;
 
-	if ( '' === rewrite_slug && '' === rewrite_no_front ) {
+	if ( '' === rewrite_slug ) {
 		return result + 'true';
 	}
 
-	return result + `[ ${rewrite_slug},${rewrite_no_front} ]`;
+	return result + `[ ${rewrite_slug} ]`;
 }
 
 const advanceSettings = settings => {
@@ -67,8 +66,7 @@ const advanceSettings = settings => {
 		'query_var'            => ${settings.query_var},
 		'sort'                 => ${settings.sort},
 		'rewrite_no_front'     => ${settings.rewrite_no_front},
-		'rewrite_hierarchical' => ${settings.rewrite_hierarchical},
-		'rewrite_slug'         => ${settings.rewrite_slug ? `'${settings.rewrite_slug}'` : true},`;
+		'rewrite_hierarchical' => ${settings.rewrite_hierarchical},`;
 }
 
 const PhpCode = settings => {
