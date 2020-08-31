@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Input = ( {label, name, placeholder, update, description = '', required = false} ) => {
+const Input = ( {label, name, placeholder, defaultValue, update, description = '', required = false} ) => {
 	return (
-		<label htmlFor={name} className="ptg-row">
-			<div className="ptg-label">
+		<div className="ctg-field">
+			<label className="ctg-label" htmlFor={name}>
 				{label}
-				{required && <span className="ptg-required">*</span>}
+				{required && <span className="ctg-required">*</span>}
+			</label>
+			<div className="ctg-input">
+				<input type="text" id={name} name={name} placeholder={placeholder} defaultValue={defaultValue} onChange={update} />
+				{description && <div className="ctg-description">{description}</div>}
 			</div>
-			<div>
-				<input type="text" id={name} name={name} placeholder={placeholder} onChange={update} />
-				{description && <p className="ptg-description"><i>{description}</i></p>}
-			</div>
-		</label>
+		</div>
 	)
 }
 
