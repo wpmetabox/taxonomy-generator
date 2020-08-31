@@ -7,6 +7,7 @@ body {
 	--color-gray: #999;
 	--color-light: #ddd;
 	--color-red: #e53e3e;
+	--color-pink: #ffebe8;
 
 	font-size: 14px;
 	margin: 48px 0;
@@ -113,6 +114,10 @@ body {
 	}
 	pre {
 		padding: 0;
+	}
+	.alert-error {
+		color: var(--color-red);
+		background: var(--color-pink);
 	}
 	&-required {
 		color: var(--color-red);
