@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>WordPress Post Type Generator - Meta Box</title>
+  <title>WordPress Taxonomy Generator - Meta Box</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="//metabox.io/wp-content/themes/rooster/style.css">
@@ -10,12 +10,12 @@
   <link rel="stylesheet" href="//metabox.io/wp-content/plugins/mb-functionality/css/style.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/atom-one-dark.min.css" media="print" onload="this.media='all'">
 
-  <meta name="description" content="Generate custom post types for WordPress in a few click. Ready to copy and paste PHP code for custom post types." />
+  <meta name="description" content="Generate custom taxonomiess for WordPress in a few click. Ready to copy and paste PHP code for custom taxonomies." />
   <link rel="canonical" href="https://metabox.io/post-type-generator/" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="WordPress Custom Taxonomy Generator - Meta Box" />
-  <meta property="og:description" content="Generate custom taxonomy for WordPress in a few click. Ready to copy and paste PHP code for custom post types." />
+  <meta property="og:description" content="Generate custom taxonomy for WordPress in a few click. Ready to copy and paste PHP code for custom taxonomies." />
   <meta property="og:url" content="https://metabox.io/custom-taxonomy-generator/" />
   <meta property="og:site_name" content="Meta Box" />
   <meta property="article:publisher" content="https://www.facebook.com/wpmetabox" />
@@ -27,7 +27,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@wpmetabox" />
   <meta name="twitter:creator" content="@wpmetabox" />
-  <script type='application/ld+json'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://metabox.io/#organization","name":"Meta Box","url":"https://metabox.io/","sameAs":["https://www.facebook.com/wpmetabox","https://www.youtube.com/c/MetaBoxWP","https://twitter.com/wpmetabox"],"logo":{"@type":"ImageObject","@id":"https://metabox.io/#logo","inLanguage":"en-US","url":"https://i0.wp.com/metabox.io/wp-content/uploads/2015/08/logo.png","width":512,"height":512,"caption":"Meta Box"},"image":{"@id":"https://metabox.io/#logo"}},{"@type":"WebSite","@id":"https://metabox.io/#website","url":"https://metabox.io/","name":"Meta Box","inLanguage":"en-US","description":"Best WordPress Plugin for Custom Fields &amp; Meta Boxes","publisher":{"@id":"https://metabox.io/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://metabox.io/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"WebPage","@id":"https://metabox.io/post-type-generator/#webpage","url":"https://metabox.io/post-type-generator/","name":"Online Generator - Meta Box","isPartOf":{"@id":"https://metabox.io/#website"},"inLanguage":"en-US","datePublished":"2017-05-05T03:21:46+00:00","dateModified":"2020-07-13T16:06:12+00:00","description":"Generate custom post types for WordPress in a few click. Ready to copy and paste PHP code for custom post types.","breadcrumb":{"@id":"https://metabox.io/post-type-generator/#breadcrumb"},"potentialAction":[{"@type":"ReadAction","target":["https://metabox.io/post-type-generator/"]}]},{"@type":"BreadcrumbList","@id":"https://metabox.io/post-type-generator/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://metabox.io/","url":"https://metabox.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://metabox.io/post-type-generator/","url":"https://metabox.io/post-type-generator/","name":"Online Generator"}}]}]}</script>
+  <script type='application/ld+json'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://metabox.io/#organization","name":"Meta Box","url":"https://metabox.io/","sameAs":["https://www.facebook.com/wpmetabox","https://www.youtube.com/c/MetaBoxWP","https://twitter.com/wpmetabox"],"logo":{"@type":"ImageObject","@id":"https://metabox.io/#logo","inLanguage":"en-US","url":"https://i0.wp.com/metabox.io/wp-content/uploads/2015/08/logo.png","width":512,"height":512,"caption":"Meta Box"},"image":{"@id":"https://metabox.io/#logo"}},{"@type":"WebSite","@id":"https://metabox.io/#website","url":"https://metabox.io/","name":"Meta Box","inLanguage":"en-US","description":"Best WordPress Plugin for Custom Fields &amp; Meta Boxes","publisher":{"@id":"https://metabox.io/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://metabox.io/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"WebPage","@id":"https://metabox.io/post-type-generator/#webpage","url":"https://metabox.io/post-type-generator/","name":"Online Generator - Meta Box","isPartOf":{"@id":"https://metabox.io/#website"},"inLanguage":"en-US","datePublished":"2017-05-05T03:21:46+00:00","dateModified":"2020-07-13T16:06:12+00:00","description":"Generate custom taxonomies for WordPress in a few click. Ready to copy and paste PHP code for custom taxonomies.","breadcrumb":{"@id":"https://metabox.io/post-type-generator/#breadcrumb"},"potentialAction":[{"@type":"ReadAction","target":["https://metabox.io/post-type-generator/"]}]},{"@type":"BreadcrumbList","@id":"https://metabox.io/post-type-generator/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://metabox.io/","url":"https://metabox.io/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://metabox.io/post-type-generator/","url":"https://metabox.io/post-type-generator/","name":"Online Generator"}}]}]}</script>
 
   <link rel="icon" href="https://i0.wp.com/metabox.io/wp-content/uploads/2015/08/cropped-logo.png?fit=192%2C192" sizes="192x192" />
   <link rel="apple-touch-icon" href="https://i0.wp.com/metabox.io/wp-content/uploads/2015/08/cropped-logo.png?fit=180%2C180" />
