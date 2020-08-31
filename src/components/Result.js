@@ -18,13 +18,11 @@ const Result = () => {
 
 	if ( ! state.name || ! state.singular_name ) {
 		return (
-			<Suspense fallback={<Spinner/>}>
-				<div className="ctg-result">
-					<p className="alert alert-error">
-						Required fields must not be emptied!
-					</p>
-				</div>
-			</Suspense>
+			<div className="ctg-result">
+				<p className="alert alert-error">
+					Required fields must not be emptied!
+				</p>
+			</div>
 		);
 	}
 	
