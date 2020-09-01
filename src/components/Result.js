@@ -2,7 +2,7 @@ import React, { useContext, useState, lazy, Suspense, memo } from 'react';
 import PhpSettings from '../contexts/PhpSettings';
 import PhpCode from '../constants/PhpCode';
 
-const Spinner = () => <span> Generating Code. Please wait...</span>;
+const Spinner = () => <span>Generating code. Please wait...</span>;
 
 const Result = () => {
 	const [state, setState] = useContext( PhpSettings );
@@ -13,19 +13,17 @@ const Result = () => {
 		setTimeout( () => setCopied( false ), 1000 );
 	}
 
-	const Highlight = lazy( () => import( 'react-highlight' ) ); 
-	const Clipboard = lazy( () => import( 'react-clipboard.js' ) ); 
+	const Highlight = lazy( () => import( 'react-highlight' ) );
+	const Clipboard = lazy( () => import( 'react-clipboard.js' ) );
 
 	if ( ! state.name || ! state.singular_name ) {
 		return (
 			<div className="ctg-result">
-				<p className="alert alert-error">
-					Required fields must not be emptied!
-				</p>
+				<p className="alert alert-error">Required fields must not be empty!</p>
 			</div>
 		);
 	}
-	
+
 	return (
 		<Suspense fallback={<Spinner/>}>
 			<div className="ctg-result">
