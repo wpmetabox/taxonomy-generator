@@ -25,14 +25,8 @@ const LabelSettings = {
 }
 
 export const PostTypeSettings = {
-	'post'               : true,
-	'page'               : true,
-	'attachment'         : false,
-	'custom_css'         : false,
-	'customize_changeset': false,
-	'oembed_cache'       : false,
-	'user_request'       : false,
-	'wp_block'           : false,
+	'post': true,
+	'page': true,
 }
 
 export const AdvancedSettings = {

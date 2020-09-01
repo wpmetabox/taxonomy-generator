@@ -27,12 +27,6 @@ export const LabelDatas = [
 export const PostTypeDatas = [
 	{ name: 'post', description: 'Post', checked: true },
 	{ name: 'page', description: 'Page', checked: false },
-	{ name: 'attachment', description: 'Media', checked: false },
-	{ name: 'custom_css', description: 'Custom CSS', checked: false },
-	{ name: 'customize_changeset', description: 'Changeset', checked: false },
-	{ name: 'oembed_cache', description: 'oEmbed Response', checked: false },
-	{ name: 'user_request', description: 'User Request', checked: false },
-	{ name: 'wp_block', description: 'Block', checked: false },
 ];
 
 export const AdvancedDatas = [
