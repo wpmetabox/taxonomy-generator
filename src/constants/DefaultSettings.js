@@ -26,7 +26,7 @@ const LabelSettings = {
 
 export const PostTypeSettings = {
 	'post': true,
-	'page': true,
+	'page': false,
 }
 
 export const AdvancedSettings = {
