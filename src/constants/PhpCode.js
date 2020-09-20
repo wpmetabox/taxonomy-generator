@@ -1,7 +1,7 @@
 import { PostTypeSettings } from './DefaultSettings';
 
 const labelSettings = settings => {
-	return`'label'  => esc_html__( '${settings.name}', 'text-domain' ),
+	return`'label'  => esc_html__( '${settings.name}', '${settings.text_domain}' ),
 		'labels' => [
 			'menu_name'                  => esc_html__( '${settings.menu_name || settings.name}', '${settings.text_domain}' ),
 			'all_items'                  => esc_html__( '${settings.all_items || settings.singular_name}', '${settings.text_domain}' ),

@@ -11,7 +11,7 @@ export const LabelDatas = [
 	{ type: 'text', name: 'all_items', label: 'All items', defaultValue: 'All %name%', updateFrom: 'name' },
 	{ type: 'text', name: 'edit_item', label: 'Edit item', defaultValue: 'Edit %singular_name%', updateFrom: 'singular_name' },
 	{ type: 'text', name: 'view_item', label: 'View item', defaultValue: 'View %singular_name%', updateFrom: 'singular_name' },
-	{ type: 'text', name: 'update_item', label: 'Update item', defaultValue: 'View %singular_name%', updateFrom: 'singular_name' },
+	{ type: 'text', name: 'update_item', label: 'Update item', defaultValue: 'Update %singular_name%', updateFrom: 'singular_name' },
 	{ type: 'text', name: 'add_new_item', label: 'Add new item', defaultValue: 'Add new %singular_name%', updateFrom: 'singular_name' },
 	{ type: 'text', name: 'new_item', label: 'New item', defaultValue: 'New %singular_name%', updateFrom: 'singular_name' },
 	{ type: 'text', name: 'parent_item', label: 'Parent item', defaultValue: 'Parent %singular_name%', updateFrom: 'singular_name' },
