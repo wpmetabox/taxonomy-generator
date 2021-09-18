@@ -35,8 +35,8 @@ const Result = () => {
 				</div>
 				<div className="ctg-share">
 					<strong>If you find this tool useful, please share it with your friends:</strong>
-					<a className="ctg-share--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmetabox.io%2Fonline-generator%2F" target="_blank" rel="noopener noreferrer">{ facebookIcon } Facebook</a>
-					<a className="ctg-share--twitter" href="https://twitter.com/intent/tweet?url=https://metabox.io/online-generator/&amp;via=wpmetabox&amp;text=I+just+generated+a+custom+meta+box+and+custom+fields+for+%23WordPress" target="_blank" rel="noopener noreferrer">{ twitterIcon } Twitter</a>
+					<a className="ctg-share--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmetabox.io%2Ftaxonomy-generator%2F" target="_blank" rel="noopener noreferrer">{ facebookIcon } Facebook</a>
+					<a className="ctg-share--twitter" href="https://twitter.com/intent/tweet?url=https://metabox.io/taxonomy-generator/&amp;via=wpmetabox&amp;text=I+just+generated+a+custom+taxonomy+for+%23WordPress" target="_blank" rel="noopener noreferrer">{ twitterIcon } Twitter</a>
 				</div>
 				<div className="ctg-result__body">
 					<Highlight className="php">{ PhpCode( state ) }</Highlight>
