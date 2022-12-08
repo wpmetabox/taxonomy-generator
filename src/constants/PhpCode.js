@@ -23,20 +23,16 @@ const labelSettings = settings => {
 		],`;
 }
 
-const postTypeSettings = settings => {
-	let temp = '';
-	let i = 0;
+const getPostTypes = settings => {
+	let temp = [];
 
 	for ( let key in PostTypeSettings ) {
-		i += 1;
 		if ( ! settings[key] ) {
 			continue;
 		}
-		if ( i > 1 ) {
-			temp += `, `;
-		}
-		temp += `'${key}'`;
+		temp.push( key );
 	}
+	temp = temp.map( postType => `'${ postType }'` ).join( ', ' );
 
 	return '' === temp ? '' : `[ ${temp} ]`;
 }
@@ -79,7 +75,7 @@ function ${settings.function_name}() {
 		${advanceSettings( settings )}
 		${reWrite( settings )}
 	];
-	register_taxonomy( '${settings.args_taxonomy}', ${postTypeSettings( settings )}, $args );
+	register_taxonomy( '${settings.args_taxonomy}', ${getPostTypes( settings )}, $args );
 }`
 	);
 }
