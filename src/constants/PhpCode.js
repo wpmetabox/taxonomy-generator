@@ -34,7 +34,7 @@ const getPostTypes = settings => {
 	}
 	temp = temp.map( postType => `'${ postType }'` ).join( ', ' );
 
-	return '' === temp ? '' : `[ ${temp} ]`;
+	return `[ ${temp} ]`;
 }
 
 const reWrite = settings => {
