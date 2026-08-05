@@ -1,34 +1,34 @@
 {
-	"name": "taxonomy-generator",
-	"homepage": "https://metabox.io/taxonomy-generator/",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"css": "sass --no-source-map -s compressed sass/style.scss public/style.css",
-		"watch": "sass --no-source-map -s compressed -w sass/style.scss public/style.css",
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"deploy": "scp -r build/* hosthatch:/var/www/metabox.io/taxonomy-generator/"
-	},
-	"dependencies": {
-		"react": "^18",
-		"react-clipboard.js": "^2",
-		"react-dom": "^18",
-		"react-highlight": "^0.15",
-		"react-scripts": "^5",
-		"react-tabs": "^6"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	}
+  "name": "taxonomy-generator",
+  "version": "2.0.0",
+  "license": "GPL-2.0-or-later",
+  "type": "module",
+  "dependencies": {
+    "highlight.js": "^11.11.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-tabs": "^6.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.5",
+    "sass": "^1.102.0",
+    "vite": "^8.2.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

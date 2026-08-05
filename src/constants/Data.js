@@ -31,7 +31,7 @@ export const PostTypeDatas = [
 
 export const AdvancedDatas = [
 	{ type: 'checkbox', name: 'public', label: 'Public?', description: 'If the taxonomy should be publicly queryable.', checked: true },
-	{ type: 'checkbox', name: 'show_ui', label: ' Show UI? ', description: 'Whether to generate a default UI for managing this taxonomy.', checked: true },
+	{ type: 'checkbox', name: 'show_ui', label: 'Show UI?', description: 'Whether to generate a default UI for managing this taxonomy.', checked: true },
 	{ type: 'checkbox', name: 'show_in_menu', label: 'Show in menu?', description: 'Where to show the taxonomy in the admin menu. show_ui must be true.', checked: true },
 	{ type: 'checkbox', name: 'show_in_nav_menus', label: 'Show in nav menus?', description: 'Whether taxonomy is available for selection in navigation menus.', checked: true },
 	{ type: 'checkbox', name: 'show_in_quick_edit', label: 'Show on edit page?', description: 'Whether to show the taxonomy on the edit page.', checked: true },
